@@ -5,4 +5,5 @@ class BasketballtrainerConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
     name = 'basketballtrainer'
 
-    model = YOLO(model="./models/hubert.pt")
+    detection_model = YOLO(model="./models/hubert.pt")
+    pose_model = YOLO(model="./models/orville.pt")
