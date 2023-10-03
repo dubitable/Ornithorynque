@@ -34,7 +34,7 @@ def predict(request: HttpRequest, model: YOLO):
     return JsonResponse(get_results(result), safe=False)
 
 @csrf_exempt
-def detect(request: HttpRequest): return predict(request, apps.BasketballtrainerConfig.detection_model)
+def detect(request: HttpRequest): return predict(request, apps.BasketballConfig.detection_model)
 
 @csrf_exempt
-def pose(request: HttpRequest): return predict(request, apps.BasketballtrainerConfig.pose_model)
+def pose(request: HttpRequest): return predict(request, apps.BasketballConfig.pose_model)
