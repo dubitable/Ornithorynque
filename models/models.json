@@ -1,0 +1,13 @@
+{
+  "hubert.pt": {
+    "name": "hubert",
+    "endpoint": "basketball",
+    "type": "detection",
+    "classes": ["shoot", "person", "ball", "rim", "made"]
+  },
+  "orville.pt": {
+    "name": "orville",
+    "endpoint": "basketball",
+    "type": "pose"
+  }
+}
